@@ -1,0 +1,11 @@
+## Compiled JavaScript files
+
+**/*.js.map
+**/coverage
+
+# Typescript v1 declaration files
+typings/
+
+node_modules/
+functions/package.json
+functions/
