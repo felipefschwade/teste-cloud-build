@@ -1,5 +1,8 @@
 {
   "name": "functions",
+  "engines": {
+    "node": "8" 
+  },
   "scripts": {
     "dev": "node --inspect -r ts-node/register src/dev-server.ts",
     "lint": "tslint --project tsconfig.json",
