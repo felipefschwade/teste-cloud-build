@@ -1,9 +1,10 @@
 steps:
 - name: 'gcr.io/cloud-builders/npm'
+  dir: '/spa'
   args: ['install']
 - name: 'gcr.io/cloud-builders/npm'
-  dir: 'workspace/spa'
+  dir: '/spa'
   args: ['run', 'build']
 - name: 'gcr.io/$PROJECT_ID/firebase'
   args: ['deploy']
-  dir: 'workspace/spa'
+  dir: '/spa'
